@@ -1,0 +1,27 @@
+POST http://localhost:8080/videos
+Content-Type: application/json
+
+{
+    "title": "Video node 01",
+    "description": "Second video",
+    "duration": 120
+}
+
+###
+
+GET http://localhost:8080/videos?search=node
+
+###
+
+PUT http://localhost:8080/videos/3ed3440e-2fa5-4db9-a2ac-58d884e3007b
+Content-Type: application/json
+
+{
+    "title": "NodeJS Video 01",
+    "description": "First node video",
+    "duration": 120
+}
+
+###
+
+DELETE http://localhost:8080/videos/3ed3440e-2fa5-4db9-a2ac-58d884e3007b
